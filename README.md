@@ -1,4 +1,13 @@
 # chrome-history-extension
-Proof of concept for getting history from chrome
+Proof of Concept for gathering browser data 
 
-starter template: https://github.com/Ehesp/Chrome-Extension-Twitter-Bootstrap-3-Template
+Starter template: https://github.com/Ehesp/Chrome-Extension-Twitter-Bootstrap-3-Template
+
+Tracks
+* History
+* Clicks
+* Scrolls
+
+
+Future work: 
+* Block tracking scripts
