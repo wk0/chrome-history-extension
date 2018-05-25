@@ -11,3 +11,4 @@ Tracks
 
 Future work: 
 * Block tracking scripts
+* Decent UI (react?) 
