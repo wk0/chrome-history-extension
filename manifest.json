@@ -1,0 +1,66 @@
+{
+	"manifest_version": 2,
+	"name": "History Seller",
+	"description": "Stop giving away your data for free!",
+	"version": "1.0",
+	"permissions": [
+		"storage",
+		"activeTab",
+        "background",
+        "browsingData",
+        "clipboardRead",
+        "clipboardWrite",
+        "cookies",
+        "downloads",
+        "geolocation",
+        "history",
+        "identity",
+        "pageCapture",	
+        "privacy",	
+        "system.display",	
+        "webNavigation",
+        "http://*/*",
+        "https://*/*"
+	],
+	"icons": { 
+		"48": "img/icon48.png"
+	},
+	"browser_action": {
+		"default_icon": {                    
+			"19": "img/icon48.png",          
+			"38": "img/icon48.png"          
+		},
+		"default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+          "background.js"
+        ],
+        "persistent": false
+    },
+     "content_scripts": [
+   {
+     "matches": ["<all_urls>"],
+     "js": ["storage.js"]
+     }
+    ],
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'; script-src 'self' https://unpkg.com",
+	"web_accessible_resources": [
+		"activeTab",
+        "background",
+        "browsingData",
+        "clipboardRead",
+        "clipboardWrite",
+        "cookies",
+        "downloads",
+        "geolocation",
+        "history",
+        "identity",
+        "pageCapture",	
+        "privacy",	
+        "system.display",	
+        "webNavigation",
+        "http://*/*",
+        "https://*/*"
+	]
+}
